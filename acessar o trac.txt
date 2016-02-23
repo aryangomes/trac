@@ -1,0 +1,10 @@
+tracd --port 8000 /home/aryan/Documentos/myproject/
+
+
+// Gerar Senha
+htpasswd -c /home/aryan/Documentos/myproject/.htpasswd aryan
+
+//login
+tracd -p 8002 --basic-auth="myproject,/home/aryan/Documentos/myproject/.htpasswd,Tinder para Animais" /home/aryan/Documentos/myproject/
+
+
